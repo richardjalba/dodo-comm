@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@0;1&family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+input {
+  font-size: 14px;
+}
+
+body {
+  line-height: 1.4;
+  color: #333333;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #777;
+}
+
+input {
+  border: 1px solid #eeeeee;
+  padding: 12px;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px;
+  background: rgb(24, 167, 224);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background: rgb(14, 150, 204);
+}
+
+button:disabled {
+  cursor: default;
+  background: rgb(98, 178, 209);
+}
+
+/* Join Page Styles */
+
+.centered-form {
+  background: rgb(24, 167, 224);
+  background-image: url('../img/dodo-homepage.PNG');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-form__box {
+  box-shadow: 2px 2px 20px 3px #1d1f26;
+  background: #fffffa;
+  padding: 24px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.centered-form button {
+  width: 100%;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.centered-form input {
+  margin-bottom: 16px;
+  width: 100%;
+  border-color: rgb(179, 179, 179);
+}
+
+/* Chat Page Layout */
+
+.chat {
+  display: flex;
+}
+
+.chat__sidebar {
+  height: 100vh;
+  color: white;
+  background: rgb(24, 167, 224);
+  width: 225px;
+  overflow-y: scroll;
+}
+
+/* Chat styles */
+
+.chat__main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+.chat__messages {
+  flex-grow: 1;
+  padding: 24px 24px 0 24px;
+  overflow-y: scroll;
+}
+
+/* Message Styles */
+
+.message {
+  margin-bottom: 16px;
+}
+
+.message__name {
+  font-weight: 800;
+  font-size: 14px;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+.message__meta {
+  color: #777;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.message a {
+  color: #0070cc;
+  text-decoration: none;
+}
+
+/* Message Composition Styles */
+
+.compose {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 16px;
+  padding: 24px;
+}
+
+.compose form {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 12px;
+}
+
+.compose input {
+  border: 1px solid #919191;
+  width: 100%;
+  padding: 12px;
+  margin: 0 16px 0 0;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.compose button {
+  font-size: 14px;
+  border-radius: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Chat Sidebar Styles */
+
+.room-title {
+  font-weight: 600;
+  font-size: 22px;
+  background: white;
+  color: #344068;
+  padding: 24px;
+  text-transform: uppercase;
+  font-family: 'Courgette', cursive;
+  letter-spacing: 2px;
+}
+
+.list-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 4px;
+  padding: 12px 24px 12px 24px;
+  background: #5d72b8;
+  font-family: 'Amaranth', sans-serif;
+  letter-spacing: 2px;
+}
+
+.users {
+  list-style-type: none;
+  font-weight: 300;
+  padding: 12px 24px 0 24px;
+  text-transform: uppercase;
+  font-family: 'Amaranth', sans-serif;
+  letter-spacing: 1px;
+}
+
+#inner-logo {
+  width: 100%;
+  height: auto;
+}
